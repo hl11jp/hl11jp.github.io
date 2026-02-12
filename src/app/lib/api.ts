@@ -21,7 +21,7 @@ export function getPostSlugs() {
     return {
       filename: slugFilename,
       title: data.title,
-      date: data.createdAt ? new Date(data.createdAt) : new Date(0)
+      date: data.createdAt ? new Date(data.createdAt * 1000) : new Date(0)
     }
   })
 

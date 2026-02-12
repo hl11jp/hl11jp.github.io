@@ -10,7 +10,7 @@ export default function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   const blogPages: MetadataRoute.Sitemap = posts.map((post) => ({
     url: `https://iuuukhueeee.github.io/posts/${post.filename}`,
-    lastModified: new Date(post.date),
+    lastModified: post.date,
   }))
   return Promise.resolve([...defaultPages, ...blogPages]);
 }
