@@ -6,6 +6,7 @@ import Link from "next/link";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://iuuukhueeee.github.io"),
   title: "Duc Thien",
   description: "Personal blogs about software development, SRE and fun.",
   authors: [{ name: "iuuukhueeee", url: "https://iuuukhueeee.github.io" }],

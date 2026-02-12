@@ -1,6 +1,8 @@
 import { MetadataRoute } from "next";
 import { getAllPosts } from "./lib/api";
 
+export const dynamic = "force-static";
+
 export default function sitemap(): Promise<MetadataRoute.Sitemap> {
   const defaultPages: MetadataRoute.Sitemap = []
 
